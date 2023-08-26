@@ -12,8 +12,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
+import MyOrder from './screens/MyOrder';
 
 function App() {
   return (
@@ -26,7 +26,8 @@ function App() {
       <Route exact path='/login' element = {<Login/> } />
       <Route exact path='/createuser' element = {<SignUp/> } />
       
-
+      <Route exact path='/myOrder' element = {<MyOrder/>} />
+      
 
     </Routes>
     </div>
